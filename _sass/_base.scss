@@ -54,6 +54,16 @@ img {
   border-radius: 5px;
 }
 
+header, img {
+  margin: 0;
+  a {
+    padding-right:20px;
+    color: #3a3a3a;
+    //text-decoration: underline;
+  }
+}
+
+
 table {
   margin-bottom: 1rem;
   width: 100%;
