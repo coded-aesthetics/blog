@@ -63,6 +63,19 @@ header, img {
   }
 }
 
+.posts-index {
+  h3 {
+    padding:0;
+  }
+  padding-bottom: 2.5rem;
+}
+
+.post-date-index {
+  display: block;
+  margin-top: .5rem;
+  color: #9a9a9a;
+  font-size:70%;
+}
 
 table {
   margin-bottom: 1rem;

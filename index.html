@@ -3,23 +3,24 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h1 class="post-title">
+<div class="posts-index">
+  {% for post in site.posts %}
+  <article>
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date-index">{{ post.date | date_to_string }}</time>
+    <h3 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
       </a>
-    </h1>
+    </h3>
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
 
-    {{ post.content }}
+
+    <!--{{ post.content }}-->
   </article>
   {% endfor %}
 </div>
 
-<div class="pagination">
+<!--div class="pagination">
   {% if paginator.next_page %}
     <a class="pagination-item older" href="{{ paginator.next_page_path | prepend: site.baseurl }}">Older</a>
   {% else %}
@@ -30,4 +31,4 @@ title: Home
   {% else %}
     <span class="pagination-item newer">Newer</span>
   {% endif %}
-</div>
+</div-->

@@ -4,7 +4,7 @@ title: Wrap your head around JavaScript Array.prototype.reduce
 ---
 
 <div class="message">
-  The array.reduce function let's you iterate over its content and boil it down to a single value.
+  The reduce function let's you iterate over the array's elements and boil it down to a single value.
 </div>
 
 Consider we have the following array:
@@ -83,7 +83,7 @@ Here is our array again:
 
 Note that in each step, the reductionSoFar variable is assigned the return value of the reducer function and it is is initialized with the first element of the array.
 
-
+## Supplying an initial value
 You can pass an optional second argument to the array.reduce function, that serves as initialization of the reductionSoFar variable.
 {% highlight js %}
 arr.reduce(reducer, startValue);
@@ -139,3 +139,26 @@ our iterations would now look like this:
 = 42  
 
 The only difference being, that the first value of reductionSoFar now is 10 and the function is called four times starting with arr[0] as currentArrayElement.
+
+Of course you are not limited in what you supply as the initial value. Consider this example where we pass an object:
+
+<div style="text-align:right;margin-bottom:-3.2em;width:100%;font-size:80%;padding-right:4em;"> <a href="https://jsfiddle.net/3wkwb915/" target="_ext" style="">JsFiddle</a></div>    
+{% highlight js %}
+let arr = [
+  {name:"John", score: 12}, 
+  {name:"Sylvia", score:15}, 
+  {name:"Susan", score:22}
+];
+const reducer = (red, cur) => {
+  red[cur.name] = cur.score;
+  return red;
+}
+let scores = arr.reduce(reducer, {});
+{% endhighlight %}
+This will convert the array into an object with names as keys and scores as values.
+
+{% highlight js %}
+/** scores will look like this:
+    {'John':12, 'Sylvia': 15, 'Susan': 22}
+**/
+{% endhighlight %}
