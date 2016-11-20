@@ -76,5 +76,5 @@ Type **:wq** to **save, then leave**
 Type **:w newfilename.txt** to **save as newfilename.txt**
 
 ### Wrapping up
-This is only the tip of the iceberg, but I found that knowing these commands help you to really be productive with vim (and not be frustrated by it).   
+This is only the tip of the iceberg, but I found that knowing these commands is what you really need to be productive with vim (and not be frustrated by it).   
 And remember, repetition is the key...
