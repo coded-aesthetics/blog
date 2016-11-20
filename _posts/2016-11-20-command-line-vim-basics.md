@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Command-Line essentials vim Basics
+title: Command-Line - Vim Basics
 ---
 
 <div class="message">
