@@ -119,25 +119,32 @@ If you would however like to use or build on this technique, feel free to do so.
 You can find [a nice collection of data to analyze](https://github.com/jdorfman/awesome-json-datasets) in this github repo by Justin Dorfman
 
 Currently supported statements:
-- select *  
-- select column  
-- select column1, column2  
-- select sum(column)  
-- select avg(column)  
-- select min(column)  
-- select max(column)  
-- select count(*)  
-- where column = 3
-- where column = 'str'
-- where column like 'A%' (begins with A)  
-- where column like '%D' (ends with D)  
-- where column like 'DA' (contains DA)  
-- order by column asc  
-- order by column desc  
-  
-since the where clause is eval'd you can do more advanced stuff e.g. on sub-objects in your dataset like:  
-- where "arrColumn[0].subObj" = 'something'
-- where "arrColumn.every((cur) => {return cur.val > 3;})" = 'true'
+{% highlight sql %}
+select *  
+select column  
+select column1, column2  
+select sum(column)  
+select avg(column)  
+select min(column)  
+select max(column)  
+select count(*)  
+where column = 3
+where column = 'str'
+where column like 'A%' # (begins with A)  
+where column like '%D' # (ends with D)  
+where column like 'DA' # (contains DA)  
+order by column asc  
+order by column desc  
+{% endhighlight %}
+
+Since the where clause is eval'd you can do more advanced stuff like filtering on properties of sub-objects:  
+{% highlight sql %}
+where "arrColumn[0].subObj" = 'something'   
+{% endhighlight %}
+or determining whether every items of an array fullfills a certain condition
+{% highlight sql %}
+where "arrCol.every((cur) => {return cur.val > 3})" = 'true'
+{% endhighlight %}
 
 Note that due to the fact that sqllite columns are case insensitive **you have to put camelCase columns in quotation-marks**:  
 Checking if a column is null only works like this: where "column == null" = 'true'
