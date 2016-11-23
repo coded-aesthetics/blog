@@ -10,7 +10,7 @@ title: Getting $refs to work with angular-schema-form
 ### The problem
 
 You have a set of values, which the user can enter in multiple forms throughout your application.  
-For example you have a form in which the user can enter data about her city of birth her current city of residence.  
+For example you have a form in which the user can enter data about her city of birth as well as current city of residence.  
 
 {% highlight js %}
 PersonalDataModel.schema = {
