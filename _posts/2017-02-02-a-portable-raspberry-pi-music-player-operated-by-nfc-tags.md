@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MusicCookie - A portable music player operated by NFC tags
+title: MusiCookie - A portable music player operated by NFC tags
 ---
 
 <div class="message">
@@ -9,7 +9,7 @@ title: MusicCookie - A portable music player operated by NFC tags
   to make e.g. a music player to hook up to your car's stereo.
 </div>
 
-### MusicCookie
+### MusiCookie
 
 This is the device. The Rasberry PI has been mounted in such a way that it protrudes out of the balsa wood top for better NFC reception. 
 
