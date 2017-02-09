@@ -10,6 +10,7 @@ title: CSS3 - Flexbox - Flex-Basis, Flex-Grow, Flex-Shrink
 
 ### flex-grow
 
+`flex-grow` sets how flex-items should be resized, when there is more than enough space.   
 We start with this example:
 <p data-height="265" data-theme-id="0" data-slug-hash="xgyQBM" data-default-tab="css,result" data-user="coded-aesthetics" data-embed-version="2" data-pen-title="xgyQBM" class="codepen">See the Pen <a href="http://codepen.io/coded-aesthetics/pen/xgyQBM/">xgyQBM</a> by Jan Reinsch (<a href="http://codepen.io/coded-aesthetics">@coded-aesthetics</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
