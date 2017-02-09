@@ -8,9 +8,7 @@ title: CSS3 - Flexbox - Flex-Basis, Flex-Grow, Flex-Shrink
   easy vertical centering and it let's you specify how elements are to be resized in case there is too much space or not enough space.
 </div>
 
-### Defining how flex-items should be resized when there is more than enough space
-
-#### flex-grow
+### flex-grow
 
 We start with this example:
 <p data-height="265" data-theme-id="0" data-slug-hash="xgyQBM" data-default-tab="css,result" data-user="coded-aesthetics" data-embed-version="2" data-pen-title="xgyQBM" class="codepen">See the Pen <a href="http://codepen.io/coded-aesthetics/pen/xgyQBM/">xgyQBM</a> by Jan Reinsch (<a href="http://codepen.io/coded-aesthetics">@coded-aesthetics</a>) on <a href="http://codepen.io">CodePen</a>.</p>
@@ -29,7 +27,7 @@ When we only assign flex-grow to one flex-item, it chews up all the extra space 
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 This is because flex-grow is 0 by default.
 
-#### flex-basis
+### flex-basis
 
 The resizing behaviour changes when we introduce `flex-basis`. This property states how big the flex-items should ideally be.
 Setting flex-basis without flex-grow is the same as if we were setting the width (with horizontal main axis).
@@ -42,7 +40,7 @@ So the extra space that can be distributed is 100px wide.
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 Here box1 gets three times more of the extra space (75px) than box2 (25px). So the extra space (100px) is distributed in the ratio 3:1.
 
-#### flex-shrink
+### flex-shrink
 
 `flex-shrink` only makes sense, when a flex-basis is set.
 It then signifies how much space a flex-item should give up (compared to the others), when there is less space than is ideal.
@@ -52,6 +50,6 @@ So box1 is 25px wide and box2 is 75px wide.
 <p data-height="265" data-theme-id="0" data-slug-hash="apRPGb" data-default-tab="css,result" data-user="coded-aesthetics" data-embed-version="2" data-pen-title="apRPGb" class="codepen">See the Pen <a href="http://codepen.io/coded-aesthetics/pen/apRPGb/">apRPGb</a> by Jan Reinsch (<a href="http://codepen.io/coded-aesthetics">@coded-aesthetics</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
-#### flex
+### flex
 
-The property flex is a shorthand that sets both flex-grow and flex-shrink to the same value
+The property `flex` is a shorthand that sets both `flex-grow` and `flex-shrink` to the same value
