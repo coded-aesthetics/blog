@@ -41,6 +41,9 @@ The areas that are most looked at roughly represent an F-shape. The first line o
 ### The wrap-up
 
 Knowing this, you should:
-- Leverage the read: Know that you have two lines (plus some) to get the most important information across and layout your content accordingly
-- Ask yourself: Did they see it? when doing user testing
-- Make important information & actions stand out
+
+Leverage the read: Know that you have two lines (plus some) to get the most important information across and layout your content accordingly
+
+Ask yourself: Did they see it? when doing user testing
+
+Make important information & actions stand out
