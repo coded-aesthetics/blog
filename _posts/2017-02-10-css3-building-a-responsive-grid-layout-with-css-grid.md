@@ -48,7 +48,7 @@ So, this is the html for our grid:
 </div>
 {% endhighlight %}
 
-Note that these elements are not it the order that is to be seen in the layout screenshots above. This is because element order can be set, when defining the grid (just like with flexbox order)   
+Note that these elements are not it the order that can be seen in the layout screenshots above. This is because element order can be set, when defining the grid (just like with flexbox order)
 On the css side we give each of the children a unique identifier through `grid-area`:
 
 {% highlight css %}
@@ -103,4 +103,4 @@ For the high width version we define a media query like so:
 
 This defines a four row, two column layout. Note how section-two spans one column and two rows, and footer and header each span two columns and one row.
 
-![high width layout]({{ site.url }}/assets/css-grid/css-grid-high-width.png)
+![MusicCookie]({{ site.url }}/assets/css-grid/css-grid-high-width.png)
